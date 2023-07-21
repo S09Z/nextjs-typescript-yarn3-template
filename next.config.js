@@ -23,6 +23,15 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+
+  trailingSlash: true,
+  reactStrictMode: false,
+  swcMinify: false,
+  experimental: {
+    esmExternals: false,
+    jsconfigPaths: true, // enables it for both jsconfig.json and tsconfig.json
+    forceSwcTransforms: true,
+  },
 }
 
 module.exports = nextConfig
